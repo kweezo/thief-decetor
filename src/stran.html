@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sl-SI">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRACK A THIEF</title>
+</head>
+<style>
+    h1,h2{
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        margin: 10px;
+        padding:40px;
+    }
+</style>
+<body>
+    <h1>TRACK A THIEF</h1>
+    <h2>DEVICE:</h2>
+    <div class="container">
+        <button type="button" onclick="alert('ON')">ON</button>
+        <button type="button" onclick="alert('OFF')">OFF</button>
+    </div>
+    <h2>LOCATION</h2>
+    <script>
+        fetch(url);
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error: ${response.status}`);
+                }.
+                return response.text();
+            })
+        .then((text) => {
+            poemDisplay.textContent = text;
+        })
+        .catch((error) => {
+            poemDisplay.textContent = `Could not fetch verse: ${error}`;
+    });
+    </script>
+</body>
+</html>
